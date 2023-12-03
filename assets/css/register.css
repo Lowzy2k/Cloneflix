@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/assets/images/try1.jpg') ;
+    background: url('/assets/images/try2.jpg') ;
     background-size: cover;  /* Ensures the image covers the entire container */
     Background-position: center;
     
@@ -62,10 +62,11 @@ body {
 
 .input-box i{
     position: absolute;
-    right: 60px;
+    right: 10px;
+    padding: 90px 50px 20px 150px;
     transform: translateY(-50%);
     font-size: 20px;
-}
+} 
 
 
 .wrapper .remember-forgot{
