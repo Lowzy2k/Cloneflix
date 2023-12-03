@@ -4,7 +4,7 @@
 
 Netflix clone made for educational purposes.
 
-In order to the app: 
+In order to run the app: 
 
 Clone this repository on Visual Studio Code
 
