@@ -1,68 +1,97 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!---
-    primary meta tags
-    -->
-    <title>Cloneflix</title>
-    
-    <!---
-    favicon-->
-<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Cloneflix</title>
+  <meta name="title" content="Cloneflix">
+  <meta name="description" content="Cloneflix">
+
+  <!-- 
+    - favicon
+  -->
+  
+
+  <!-- 
     - google font link
--->
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-<!--
-    custom css link
--->
-<link rel="stylesheet" href="./assets/css/login.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/index.js" type="module"></script>
 
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-            <div class="input-box">
-                <input type="text" placeholder="Email"
-                required>
-             <i class='bx bx-envelope' ></i>
-        </div>
-        <div class="input-box">
-             <input type="password" placeholder="Password"
-             required>
-             <i class='bx bxs-lock-alt' ></i>
-        </div>
+  <!-- 
+    - #HEADER
+  -->
 
+  <header class="header">
 
-        <div class="remember-forgot">
-            <label><input type="checkbox"> Remember me</label><a href="#"> Forgot password?</a>
-        </div>
-        
+    <a href="./index.html" class="logo">
+      <img src="./assets/images/logo1.png" width="140" height="32" alt="Tvflix home">
+    </a>
 
-        <button type="button" class="btn" onclick="location.href='mainpage.html'">Login</button>
+    <div class="search-box" search-box>
+      <div class="search-wrapper" search-wrapper>
+        <input type="text" name="search" aria-label="search movies" placeholder="Search any movies..."
+          class="search-field" autocomplete="off" search-field>
 
+        <img src="./assets/images/search.png" width="24" height="24" alt="search" class="leading-icon">
+      </div>
 
-        <div class="register-link">
-             <p> Don't have an account? <a href="register.html"> Go to register </a> </p>
-        </div>
-        </form>
+      <button class="search-btn" search-toggler>
+        <img src="./assets/images/close.png" width="24" height="24" alt="close search box">
+      </button>
     </div>
-</body>
 
-<script src="assets/js/index.js"></script>
+    <button class="search-btn" search-toggler menu-close>
+      <img src="./assets/images/search.png" width="24" height="24" alt="open search box">
+    </button>
+
+    <button class="menu-btn" menu-btn menu-toggler>
+      <img src="./assets/images/menu.png" width="24" height="24" alt="open menu" class="menu">
+      <img src="./assets/images/menu-close.png" width="24" height="24" alt="close menu" class="close">
+    </button>
+
+  </header>
+
+
+
+
+  <main>
+    <!-- 
+      - #SIDEBAR
+    -->
+
+    <nav class="sidebar" sidebar></nav>
+    <div class="overlay" overlay menu-toggler></div>
+
+
+
+
+
+    <article class="container" page-content></article>
+  </main>
+
+</body>
 
 </html>
