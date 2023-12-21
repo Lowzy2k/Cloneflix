@@ -38,16 +38,15 @@ export function sidebar() {
         onclick='getMovieList("with_original_language=en", "English")'>English</a>
     
       <a href="./movie-list.html" menu-close class="sidebar-link"
-        onclick='getMovieList("with_original_language=gr", "Greek")'>Greek</a>
+        onclick='getMovieList("with_original_language=ger", "German")'>German</a>
     
-      <a href="./movie-list.html" menu-close class="sidebar-link"
-        onclick='getMovieList("with_original_language=al", "Albanian")'>Albanian</a>
+      
     
     </div>
     
     <div class="sidebar-footer">
       <p class="copyright">
-        Copyright 2023 <a href="https://github.com/Lowzy2k/Cloneflix">XGkara & Lowzy </a>
+        Copyright 2023 <a href="https://github.com/Lowzy2k/Cloneflix">XGkara Lowzy </a>
       </p>
     
       <img src="./assets/images/tmdb-logo.svg" width="130" height="17" alt="the movie database logo">
